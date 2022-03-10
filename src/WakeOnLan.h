@@ -13,7 +13,7 @@ class WakeOnLan {
 	unsigned long delayPacket = 0;
 
    public:
-	WakeOnLan(WiFiUDP _udpSock);
+	WakeOnLan(EthernetUDP _udpSock);
 
 	void setBroadcastAddress(IPAddress _broadcastAddress);
 	void setRepeat(uint8_t _repeatPacket, unsigned long _delayPacket);
