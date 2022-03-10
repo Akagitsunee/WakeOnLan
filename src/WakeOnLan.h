@@ -1,12 +1,12 @@
 #ifndef WakeOnLan_h
 #define WakeOnLan_h
 
-#include <WiFiUdp.h>
+#include <EthernetUdp.h>
 #include <Arduino.h>
 
 class WakeOnLan {
    private:
-	WiFiUDP udpSock;
+	EthernetUdp udpSock;
 	IPAddress broadcastAddress = IPAddress(255, 255, 255, 255);
 
 	uint8_t repeatPacket = 1;
